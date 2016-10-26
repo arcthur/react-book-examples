@@ -1,0 +1,62 @@
+$class-prefix: "tabs";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.operator {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.#{$class-prefix} {
+  &-bar {
+    margin-bottom: 16px;
+  }
+
+  &-nav {
+    font-size: 14px;
+
+    &:after,
+    &:before {
+      display: table;
+      content: " ";
+    }
+
+    &:after {
+      clear: both;
+    }
+
+  }
+
+  &-nav > &-tab {
+    float: left;
+    list-style: none;
+    margin-right: 24px;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+  }
+
+  &-nav > &-active {
+    border-bottom: 2px solid #00C49F;
+    color: #00C49F;
+    cursor: default;
+  }
+
+  &-content &-panel {
+    display: none;
+  }
+
+  &-content &-active {
+    display: block;
+  }
+}
+

@@ -1,0 +1,73 @@
+:global {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.operator {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.bar {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.nav {
+  font-size: 14px;
+
+  &:after,
+  &:before {
+    display: table;
+    content: " ";
+  }
+
+  &:after {
+    clear: both;
+  }
+
+}
+
+.tab {
+  float: left;
+  list-style: none;
+  margin-right: 24px;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+}
+
+.tabActive {
+  color: #00C49F;
+  cursor: default;
+}
+
+.panel {
+  display: none;
+}
+
+.content {
+  display: block;
+}
+
+.contentActive {
+  display: block;
+}
+
+.inkBar {
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  box-sizing: border-box;
+  height: 2px;
+  background-color: #00C49F;
+  z-index: 1;
+}

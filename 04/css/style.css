@@ -1,0 +1,25 @@
+.comment-box {
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.comment-box .comment-item {
+  list-style: none;
+  outline: none;
+  padding: 1em 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.comment-box .comment-item p {
+  min-height: 22px;
+}
+
+.comment-box .comment-item .comment-item-name {
+  color: #259;
+}
+
+.comment-box .comment-item .comment-item-content {
+  word-wrap: break-word;
+  color: #333;
+}

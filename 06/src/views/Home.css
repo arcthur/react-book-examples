@@ -1,0 +1,33 @@
+.frame {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.ant-table {
+  width: 100%;
+}
+
+.control-group {
+  margin-bottom: 10px;
+}
+
+.control-group label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.control-group input,
+.control-group textarea {
+  display: inline-block;
+  vertical-align: middle;
+  width: 260px;
+  border: 1px #ccc solid;
+  height: 28px;
+}
+
+.control-group textarea {
+  height: 40px;
+}
