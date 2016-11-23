@@ -8,7 +8,6 @@ class App extends Component {
     super(props);
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleClick = this.handleClick.bind(this);
 
     this.state = {
       activeIndex: 0,
@@ -21,16 +20,9 @@ class App extends Component {
     });
   }
 
-  handleClick() {
-    this.setState({
-      test: 0,
-    });
-  }
-
   render() {
     return (
       <div>
-        <button onClick={this.handleClick}>点击</button>
         <div className="operator">
           <span>切换 Tab：</span>
           <select value={this.state.activeIndex} onChange={this.handleChange}>
