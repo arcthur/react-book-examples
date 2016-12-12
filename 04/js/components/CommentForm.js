@@ -9,6 +9,9 @@ class CommentForm extends Component {
     this.state = {
       value: '',
     };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleAddComment = this.handleAddComment.bind(this);
   }
 
   handleChange(event) {
@@ -16,7 +19,7 @@ class CommentForm extends Component {
   }
 
   handleAddComment() {
-    CommentAction.addComment(this.state.value);
+    CommentActions.addComment(this.state.value);
   }
 
   render() {
@@ -24,7 +27,7 @@ class CommentForm extends Component {
       <div>
         <textarea
           value={this.state.value}
-          onChange={::this.handleChange}
+          onChange={this.handleChange}
         />
         <button
           className="comment-confirm-btn"

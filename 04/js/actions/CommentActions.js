@@ -26,7 +26,11 @@ const CommentActions = {
   addComment(text) {
     fetch('/api/submit.json', {
       method: 'POST',
-      body: 'value=' + text,
+      body: JSON.stringify({ value: encodeURI(text)}),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
     })
     .then((res) => {
       return res.json();
