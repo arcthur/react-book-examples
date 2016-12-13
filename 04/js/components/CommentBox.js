@@ -1,4 +1,3 @@
-// components/CommentBox.js
 import React, { Component } from 'react';
 import { Container } from 'flux/utils';
 import CommentStore from '../stores/CommentStore';
