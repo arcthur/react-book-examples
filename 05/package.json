@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "./node_modules/.bin/webpack",
-    "watch": "./node_modules/.bin/webpack-dev-server --hot --inline --content-base .",
+    "start": "./node_modules/.bin/webpack-dev-server --hot --inline --content-base .",
     "test": "mocha --compilers js:babel-register"
   },
   "dependencies": {
