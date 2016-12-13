@@ -1,0 +1,11 @@
+.message {
+  margin: 100px auto 50px auto;
+  width: 500px;
+  text-align: center;
+  font-size: 18px;
+
+  > p {
+    height: 32px;
+    line-height: 32px;
+  }
+}
