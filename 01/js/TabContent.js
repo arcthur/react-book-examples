@@ -6,11 +6,10 @@ class TabContent extends Component {
     classPrefix: React.PropTypes.string,
     panels: PropTypes.node,
     activeIndex: PropTypes.number,
-    isActive: PropTypes.bool,
   };
 
   getTabPanes() {
-    const { classPrefix, activeIndex, panels, isActive } = this.props;
+    const { classPrefix, activeIndex, panels } = this.props;
 
     return React.Children.map(panels, (child) => {
       if (!child) { return; }

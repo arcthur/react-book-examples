@@ -10,11 +10,10 @@ class TabContent extends Component {
   static propTypes = {
     panels: PropTypes.object,
     activeIndex: PropTypes.number,
-    isActive: PropTypes.bool,
   };
 
   getTabPanes() {
-    const { activeIndex, panels, isActive } = this.props;
+    const { activeIndex, panels } = this.props;
 
     return panels.map((child) => {
       if (!child) { return; }
