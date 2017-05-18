@@ -12,6 +12,9 @@ module.exports = {
       test: /\.js$/,
       include: path.join(__dirname, 'src'),
       loader: 'babel'
+    },{
+      test: /\.css$/,
+      loader: "style!css" 
     }]
   }
 };
