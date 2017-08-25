@@ -1,4 +1,5 @@
 import React from 'react';
+import './Preview.css';
 
 class Preview extends React.Component {
   static propTypes = {
